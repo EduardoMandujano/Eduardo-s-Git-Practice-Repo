@@ -1,0 +1,44 @@
+.primary_title {
+    font-weight: bold;
+    color: #57330f;
+    font-size: 46px;
+    text-align: center;
+}
+
+.intro {
+    color: #57330f;
+    font-size: 38px;
+    text-align: center;
+    font-family: "Brush Script MT";
+}
+
+.secondary_title {
+    font-weight: bold;
+    color: #57330f;
+    font-size: 38px;
+    font-style: italic;
+}
+
+.ingredients {
+    color: #57330f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body {
+        background-image: url(sample_background_2.jpg);
+        opacity: 2.2;
+        filter: sepia(0.60);
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    filter: sepia(0.60);
+}
+
+.instructions {
+    color: #57330f;
+    font-size: 18px;
+    font-weight: bold;
+}
