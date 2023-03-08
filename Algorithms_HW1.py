@@ -51,3 +51,6 @@ for x in numbers:
 
 print('Number of odd numbers: ', odd_numbers_count)
 print('Number of even numbers: ', even_numbers_count)
+
+
+# end
