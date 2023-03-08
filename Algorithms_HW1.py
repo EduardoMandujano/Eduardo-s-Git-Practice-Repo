@@ -40,7 +40,6 @@ elif n3 > n1 and n3 > n2:
 
 
 numbers = input('Enter a number: ')
-# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
 odd_numbers_count = 0
 even_numbers_count = 0
 for x in numbers:
@@ -51,3 +50,6 @@ for x in numbers:
 
 print('Number of odd numbers: ', odd_numbers_count)
 print('Number of even numbers: ', even_numbers_count)
+
+
+# end
