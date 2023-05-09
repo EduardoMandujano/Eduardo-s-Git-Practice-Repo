@@ -287,15 +287,15 @@
 # If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
 # If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
-def hoop_count(n):
-    if n >= 10:
-        return "Great, now move on to tricks"
-    else:
-        return "Keep at it until you get it"
-
-
-n = 1
-print(hoop_count(n))
+# def hoop_count(n):
+#     if n >= 10:
+#         return "Great, now move on to tricks"
+#     else:
+#         return "Keep at it until you get it"
+#
+#
+# n = 1
+# print(hoop_count(n))
 
 
 # All of the animals are having a feast! Each animal is bringing one dish. There is just one rule:
@@ -332,22 +332,309 @@ print(hoop_count(n))
 # if bmi > 30 return "Obese"
 
 
-def bmi(weight, height):
-    result = weight / pow(height, 2)
-    if result <= 18.5:
-        return "Underweight"
-    elif result <= 25:
-        return "Normal"
-    elif result <= 30:
-        return "Overweight"
+# def bmi(weight, height):
+#     result = weight / pow(height, 2)
+#     if result <= 18.5:
+#         return "Underweight"
+#     elif result <= 25:
+#         return "Normal"
+#     elif result <= 30:
+#         return "Overweight"
+#     else:
+#         return "Obese"
+#
+#
+# weight = 110
+# height = 1.80
+# print(bmi(weight, height))
+
+
+# Bob needs a fast way to calculate the volume of a cuboid with three values:
+# the length, width and height of the cuboid.
+# Write a function to help Bob with this calculation.
+# def get_volume_of_cuboid(length, width, height):
+#     result = length * width * height
+#     return result
+#
+#
+# print(get_volume_of_cuboid(2, 3, 4,))
+
+#
+# Create a function that accepts a string and a single character,
+# and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+#
+# If no occurrences can be found, a count of 0 should be returned.
+
+
+# def str_count(strng, letter):
+#     count = 0
+#     for i in strng:
+#         if i == letter:
+#             count += 1
+#     return count
+#
+#
+# strng = "starbucks"
+# letter = "s"
+# print(str_count(strng, letter))
+
+
+# def are_you_playing_banjo(name):
+#     if name[0] == "R" or name [0] =="r":
+#         name = name + " plays banjo"
+#     else:
+#         name = name + " does not play banjo"
+#     return name
+#
+#
+# name = "Robert"
+# print(are_you_playing_banjo(name))
+
+
+# def add_binary(a,b):
+#     sum = a + b
+#     return bin(sum)[2:]
+#
+#
+# print(add_binary(2,3))
+
+
+# def stray(arr):
+#     for s in arr:
+#         if arr.count(s) == 1:
+#             return s
+#
+#
+# arr = [17, 17, 3, 17, 17, 17, 17]
+# print(stray(arr))
+
+
+# def square(n):
+#     n = n*n
+#     return n
+#
+#
+# n = 3
+# print(square(n))
+
+
+# def high_and_low(numbers):
+#     numbers_list = list(map(int, numbers.split()))
+#     highest = max(numbers_list)
+#     lowest = min(numbers_list)
+#     numbers = f'{highest} {lowest}'
+#     return numbers
+#
+#
+# numbers = ("1 2 3 4 5")
+# print(high_and_low(numbers))
+#
+#
+# def xo(s):
+#     if s.lower().count("o") == s.lower().count("x"):
+#         return True
+#     else:
+#         return False
+#
+#
+# s = "xooxx"
+# print(xo(s))
+#
+#
+# def say_hello(name):
+#     return "Hello, " + name
+#
+#
+# name = "Mr. Spock"
+# print(say_hello(name))
+#
+#
+# def maps(a):
+#    return [v*2 for v in a]
+#
+#
+# a = [1, 2, 3]
+# print(maps(a))
+#
+#
+# def double_char(s):
+#     result_s = ""
+#     for char in s:
+#         result_s += char*2
+#     return result_s
+#
+#
+# s = "Hello!"
+# print(double_char(s))
+#
+#
+# def unusual_five()
+#     return len("hacker")
+#
+# print(unusual_five())
+
+
+# def square_sum(numbers):
+#     return sum(x*x for x in numbers)
+#
+#
+# numbers = [1, 2, 2]
+# print(square_sum(numbers))
+#
+#
+# def string_to_number(s):
+#     s = int(s)
+#     return s
+#
+#
+# s = "1234"
+# print(string_to_number(s))
+
+
+# def is_even(n):
+#     if n % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+#
+# n = 3
+# print(is_even(n))
+#
+
+# def summation(num):
+#     result = 0
+#     for i in range(1, num+1):
+#         result += i
+#     return result
+#
+#
+# num = 8
+# print(summation(num))
+
+
+# def square_digits(num):
+#     num_string = str(num)
+#     result = ""
+#     for i in num_string:
+#         result += str((int(i)**2))
+#     return int(result)
+#
+#
+# num = 9119
+# print(square_digits(num))
+
+
+# def count_by(x, n):
+#     result = []
+#     i = x
+#     while i <= n:
+#         result.append(i)
+#         i += x
+#     return result
+#
+#
+# print(count_by(1, 10))
+#
+#
+# def greet(xo):
+#     return xo
+#
+#
+# xo = "hello world!"
+# print(greet(xo))
+#
+#
+# def greet():
+#     return "hello world!"
+#
+#
+# print(greet())
+#
+#
+# def reverse_words(text):
+#     words = text.split()
+#     reversed_words = []
+#     for i in words:
+#         reversed_word = i[::-1]
+#         reversed_words.append(reversed_word)
+#     return "  ".join(reversed_words)
+#
+#
+# text = "This is an example!"
+# print(reverse_words(text))
+#
+#
+# def is_triangle(a, b, c):
+#     if a+b > c and a+c > b and b+c > a:
+#         return True
+#     else:
+#         return False
+
+# def find_multiples(integer, limit):
+#     result = []
+#     for i in range(integer, limit+1, integer):
+#         result.append(i)
+#     return result
+#
+#
+# integer = 2
+# limit = 10
+# print(find_multiples(integer, limit))
+#
+#
+# def validate_pin(pin):
+#     if pin.isdigit() and len(pin) == 4 or len(pin) == 6:
+#         return True
+#     else:
+#         return False
+#
+#
+# pin = "-12345"
+# print(validate_pin(pin))
+
+
+# def lovefunc( flower1, flower2 ):
+#     if flower1 % 2 == 0 and flower2 % 2 != 0 or flower1 % 2 != 0 and flower2 % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+#
+# flower1 = 2
+# flower2 = 2
+# print(lovefunc(flower1,flower2))
+
+
+def make_negative(number):
+    if number > 0:
+        return number * (-1)
+    if number <= 0:
+        return number
+
+
+number = 0
+print(make_negative(number))
+
+
+def digitize(n):
+    reversed_array = []
+    for i in str(n):
+        reversed_array.insert(0, int(i))
+    return reversed_array
+
+n = 0
+print(digitize(n))
+
+
+def greet(name, owner):
+    if name == owner:
+        return "Hello boss"
     else:
-        return "Obese"
+        return "Hello guest"
 
 
-weight = 110
-height = 1.80
-print(bmi(weight, height))
-
-
-
+name = "Gus"
+owner = "Gus"
+print(greet(name, owner))
 
