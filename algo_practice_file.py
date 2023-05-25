@@ -604,37 +604,168 @@
 # flower1 = 2
 # flower2 = 2
 # print(lovefunc(flower1,flower2))
+#
+#
+# def make_negative(number):
+#     if number > 0:
+#         return number * (-1)
+#     if number <= 0:
+#         return number
+#
+#
+# number = 0
+# print(make_negative(number))
+#
+#
+# def digitize(n):
+#     reversed_array = []
+#     for i in str(n):
+#         reversed_array.insert(0, int(i))
+#     return reversed_array
+#
+# n = 0
+# print(digitize(n))
+#
+#
+# def greet(name, owner):
+#     if name == owner:
+#         return "Hello boss"
+#     else:
+#         return "Hello guest"
+#
+#
+# name = "Gus"
+# owner = "Gus"
+# print(greet(name, owner))
+#
+#
+# def minimum(arr):
+#     return min(arr)
+#
+#
+# def maximum(arr):
+#     return max(arr)
+#
+#
+# arr = [4, 6, 2, 1, 9, 63, -134, 566]
+# print(minimum(arr))
+# print(maximum(arr))
+#
+#
+# def likes(names):
+#     if len(names) == 1:
+#         return names[0] + " likes this"
+#     elif len(names) == 2:
+#         return names[0] + " and " + names[1] + " like this"
+#     elif len(names) == 3:
+#         return names[0] + ", " + names[1] + " and " + names[2] + " like this"
+#     elif len(names) == 4:
+#         return names[0] + ", " + names[1] + " and 2 others" + " like this"
+#     elif len(names) == 5:
+#         return names[0] + ", " + names[1] + " and 3 others" + " like this"
+#     elif names == []:
+#         return "no one likes this"
+#
+#
+# names = ["Peter", "Jacob", "Max", "Mark"]
+# print(likes(names))
+#
+#
+# def likes(names):
+#     n = len(names)
+#     if n == 0:
+#         return "no one likes this"
+#     elif n == 1:
+#         return f"{names[0]} likes this"
+#     elif n == 2:
+#         return f"{names[0]} and {names[1]} like this"
+#     elif n == 3:
+#         return f"{names[0]}, {names[1]} and {names[2]} like this"
+#     else:
+#         return f"{names[0]}, {names[1]} and {n-2} others like this"
+#
+
+# def is_pangram(s):
+#     alphabet = set("abcdefghijklmnopqrstuvwxyz")
+#     return set(s.lower()) >= alphabet
+#
+#
+# s = "The quick brown fox jumps over the lazy dog"
+# print(is_pangram(s))
 
 
-def make_negative(number):
-    if number > 0:
-        return number * (-1)
-    if number <= 0:
-        return number
+# def sum_two_smallest_numbers(numbers):
+#     sorted_list = sorted(numbers)
+#     sum = sorted_list[0] + sorted_list[1]
+#     return sum
+#
+#
+# numbers = [19, 5, 42, 2, 77]
+# print(sum_two_smallest_numbers(numbers))
 
 
-number = 0
-print(make_negative(number))
+# def filter_list(l):                         # define function with argument l for list
+#     resulting_list = []                     # create empty list that will hold the result
+#     for item in l:                          # for loop iterates for every item on the l list
+#         if isinstance(item, int):           # check to see if each item is an integer, returns true if it is
+#             resulting_list.append(item)     # if it returns true, appends the item to the resulting list
+#     return resulting_list                   # returns resulting list results
+#
+#
+# l = [1, 2, 'a','b']
+# print(filter_list(l))
+#
+#
+# def dna_to_rna(dna):
+#     return dna.replace("T", "U")
+#
+#
+# dna = "GCAT"
+# print(dna_to_rna(dna))
+#
+#
+# def string_to_array(s):
+#     array = []
+#     array = s.split(" ")
+#     return array
+#
+#
+# s = "I love arrays they are my favorite"
+# print(string_to_array(s))
+#
+#
+# def solution(s):
+#     result = ""
+#     for i in s:
+#         if i.isupper():
+#             result += " " + i
+#         else:
+#             result += i
+#     return result
+#
+#
+# s = "camelCasing"
+# print(solution(s))
 
 
-def digitize(n):
-    reversed_array = []
-    for i in str(n):
-        reversed_array.insert(0, int(i))
-    return reversed_array
-
-n = 0
-print(digitize(n))
+def find_smallest_int(arr):
+    return min(arr)
 
 
-def greet(name, owner):
-    if name == owner:
-        return "Hello boss"
-    else:
-        return "Hello guest"
+arr = [34, 15, 88, 2]
+print(find_smallest_int(arr))
 
 
-name = "Gus"
-owner = "Gus"
-print(greet(name, owner))
+def cockroach_speed(s):
+    result = s * 100000 // 3600
+    return int(result)
+
+
+s = 1.08
+print(cockroach_speed(s))
+
+
+
+
+
 
