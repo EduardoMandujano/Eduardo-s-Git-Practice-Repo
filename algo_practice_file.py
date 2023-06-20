@@ -748,21 +748,343 @@
 # print(solution(s))
 
 
-def find_smallest_int(arr):
-    return min(arr)
+# def find_smallest_int(arr):
+#     return min(arr)
+#
+#
+# arr = [34, 15, 88, 2]
+# print(find_smallest_int(arr))
+#
+#
+# def cockroach_speed(s):
+#     result = s * 100000 // 3600
+#     return int(result)
+#
+#
+# s = 1.08
+# print(cockroach_speed(s))
 
 
-arr = [34, 15, 88, 2]
-print(find_smallest_int(arr))
+# def even_or_odd(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+#
+#
+# number = 3
+# print(even_or_odd(number))
+#
+#
+# def get_middle(s):
+#     length = len(s)
+#     resulting_char = 0
+#     actual_char = ""
+#     if length % 2 != 0:
+#         resulting_char = int(length // 2)
+#         actual_char = s[resulting_char]
+#     elif length % 2 == 0:
+#         resulting_char = int(length // 2)
+#         actual_char = s[resulting_char - 1:resulting_char + 1]
+#
+#     return actual_char
+#
+#
+# s = "test"
+# print(get_middle(s))
 
 
-def cockroach_speed(s):
-    result = s * 100000 // 3600
-    return int(result)
+# def fake_bin(x):
+#     resulting_string = ""
+#     for i in x:
+#         if int(i) < 5:
+#             resulting_string += "0"
+#         else:
+#             resulting_string += "1"
+#     return resulting_string
+#
+# x = "1234567890"
+# print(fake_bin(x))
+#
+#
+# def number(lines):
+#     numbered_lines = []
+#     for i, line in enumerate(lines, start=1):
+#         numbered_line = f"{i}: {line}"
+#         numbered_lines.append(numbered_line)
+#     return numbered_lines
+#
+#
+# lines = ["a", "b", "c"]
+# print(number(lines))
+#
+#
+# def get_count(sentence):
+#     result_1 = int(sentence.count("a", "e", "i"))
+#     result_2 = int(sentence.count("o", "u"))
+#     final_result = result_1 + result_2
+#     return final_result
+#
+#
+# sentence = "aeiouy"
+# print(get_count(sentence))
 
 
-s = 1.08
-print(cockroach_speed(s))
+# def open_or_senior(data):
+#     category = []
+#     for member in data:
+#         age, handicap = member
+#         if age >= 55 and handicap > 7:
+#             category.append("Senior")
+#         else:
+#             category.append("Open")
+#     return category
+#
+#
+# data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+# print(open_or_senior(data))
+
+
+# def get_age(age):
+#     parsed_age = int(age[0])
+#     return parsed_age
+#
+#
+# age = "9 years old"
+# print(get_age(age))
+#
+#
+# def correct(s):
+#     if "0" in s:
+#         s = s.replace("0", "O")
+#     if "1" in s:
+#         s = s.replace("1", "I")
+#     if "5" in s:
+#         s = s.replace("5", "S")
+#     return s
+#
+#
+# s = "L0ND0N DUBL1N 51NGAP0RE"
+# print(correct(s))
+
+# def solution(text, ending):
+#     return text.endswith(ending)
+#
+#
+# print(solution("abc", "bc"))
+# print(solution("abc", "d"))
+#
+#
+# def multiple_of_index(arr):
+#     new_array = []
+#     for i in range(1, len(arr)):
+#         if (arr[1] % i == 0):
+#             new_array.append(arr[i])
+#     return new_array
+#
+#
+# arr = [22,-6, 32, 82, 9, 25]
+# print(multiple_of_index(arr))
+#
+#
+# import math
+# def find_next_square(sq):
+#     result = math.sqrt(sq)
+#     if result.is_integer():
+#         return (result + 1) * (result + 1)
+#     else:
+#         return -1
+#
+#
+# sq = 121
+# print(find_next_square(sq))
+#
+#
+# def switch_it_up(number):
+#     if number == 0:
+#         return "Zero"
+#     elif number == 1:
+#         return "One"
+#     elif number == 2:
+#         return "Two"
+#     elif number == 3:
+#         return "Three"
+#     elif number == 4:
+#         return "Four"
+#     elif number == 5:
+#         return "Five"
+#     elif number == 6:
+#         return "Six"
+#     elif number == 7:
+#         return "Seven"
+#     elif number == 8:
+#         return "Eight"
+#     elif number == 9:
+#         return "Nine"
+#
+# number = 0
+# print(switch_it_up(number))
+#
+#
+# def hero(bullets, dragons):
+#     if bullets >= (dragons * 2):
+#         return True
+#     else:
+#         return False
+#
+# bullets = 1
+# dragons = 1
+# print(hero(bullets, dragons))
+
+
+# def paperwork(n, m):
+#     pages_needed = 0
+#     if n > 0 and m > 0:
+#         pages_needed = n * m
+#     if n < 0 or m < 0:
+#         pages_needed = 0
+#     return pages_needed
+#
+#
+# n = -5
+# m = 5
+# print(paperwork(n, m))
+#
+#
+# def find_short(s):
+#     words = s.split()
+#     shortest_length = 100
+#     for word in words:
+#         if len(word) < shortest_length:
+#             shortest_length = len(word)
+#     return shortest_length
+#
+#
+# s = "el conde de parangaricutirimicuaro"
+# print(find_short(s))
+#
+#
+# def sum_array(arr):
+#     output = 0
+#     for numbers in arr:
+#         output += numbers
+#     return output
+#
+#
+# arr = [1, 5.2, 4 , 0, -1]
+# print(sum_array(arr))
+#
+#
+# def check_for_factor(base, factor):
+#     if base % factor == 0:
+#         return True
+#     else:
+#         return False
+#
+# base = 9
+# factor = 2
+# print(check_for_factor(base, factor))
+#
+#
+# def get_sum(a,b):
+#     output = 0
+#     if a == b:
+#         output = a
+#     if a != b:
+#         output = (a) + (b)
+#     return output
+#
+#
+# a = -1
+# b = 0
+# print(get_sum(a, b))
+
+
+# def step(x, y):
+#     result = 0
+#     return y - x
+#
+#
+# x = 45
+# y = 48
+# print(step(x,y))
+#
+#
+# def problem(a):
+#     if type(a) == int:
+#         return (a * 50) + 6
+#     else:
+#         return "Error"
+#
+# a = 10
+# print(problem(a))
+#
+#
+# def twice_as_old(dad_years_old, son_years_old):
+#     result = (dad_years_old - (2 * son_years_old))
+#     if result < 0:
+#         result = (dad_years_old - (2 * son_years_old)) * -1
+#     return result
+#
+#
+#
+# dad_years_old = 36
+# son_years_old = 7
+# print(twice_as_old(dad_years_old, son_years_old))
+#
+#
+# def plural(n):
+#     if n == 0 or n > 1:
+#         return True
+#     else:
+#         return False
+#
+# n = 0
+# print(plural(n))
+
+
+# def multiply(a, b):
+#     result = a * b
+#     return result
+#
+#
+# a = 2
+# b = 3
+# print(multiply(a, b))
+#
+#
+# def between(a,b):
+#     result_array = []
+#     for i in range(a, b+1):
+#         result_array.append(i)
+#     return result_array
+#
+#
+#
+# a = 1
+# b = 4
+# print(between(a, b))
+#
+#
+# def repeat_str(repeat, string):
+#     return repeat * string
+#
+#
+# repeat = 4
+# string = "Hello"
+# print(repeat_str(repeat, string))
+
+
+def find_needle(haystack):
+    for needle in haystack:
+        if needle == "needle":
+            return "found the needle at position " + str(haystack.index("needle"))
+
+
+haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+print(find_needle(haystack))
+
+
 
 
 
