@@ -1075,14 +1075,83 @@
 # print(repeat_str(repeat, string))
 
 
-def find_needle(haystack):
-    for needle in haystack:
-        if needle == "needle":
-            return "found the needle at position " + str(haystack.index("needle"))
+# def find_needle(haystack):
+#     for needle in haystack:
+#         if needle == "needle":
+#             return "found the needle at position " + str(haystack.index("needle"))
+#
+#
+# haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+# print(find_needle(haystack))
+#
+#
+# def check(seq, elem):
+#     return elem in seq
+#
+#
+# seq = [1, 2, 3, 4, 0]
+# elem = 0
+# print(check(seq, elem))
 
 
-haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
-print(find_needle(haystack))
+# def wave(people):
+#     wave_array = []
+#     for person in range(len(people)):
+#         if people[person].isspace():
+#             continue
+#         wave_array.append(people[:person] + people[person].upper() + people[person+1:])
+#     return wave_array
+#
+#
+# people = "hello"
+# print(wave(people))
+#
+#
+# def move(position, roll):
+#     result = (2 * roll) + position
+#     return result
+#
+#
+# position = 3
+# roll = 6
+# print(move(position, roll))
+
+
+def opposite(number):
+    return number * (-1)
+
+
+number = -34
+print(opposite(number))
+
+
+def round_to_next5(n):
+    if n % 5 == 0:
+        return n
+    else:
+        return n + (5 - (n % 5))
+
+
+n = 7
+print(round_to_next5(n))
+
+
+def powers_of_two(n):
+    return [2 ** i for i in range(n+1)]
+
+n = 5
+print(powers_of_two(n))
+
+
+def century(year):
+    return (year + 99) // 100
+
+
+year = 89
+print(century(year))
+
+
+
 
 
 
