@@ -1117,46 +1117,721 @@
 # print(move(position, roll))
 
 
-def opposite(number):
-    return number * (-1)
+# def opposite(number):
+#     return number * (-1)
+#
+#
+# number = -34
+# print(opposite(number))
+#
+#
+# def round_to_next5(n):
+#     if n % 5 == 0:
+#         return n
+#     else:
+#         return n + (5 - (n % 5))
+#
+#
+# n = 7
+# print(round_to_next5(n))
+#
+#
+# def powers_of_two(n):
+#     return [2 ** i for i in range(n+1)]
+#
+# n = 5
+# print(powers_of_two(n))
+#
+#
+# def century(year):
+#     return (year + 99) // 100
+#
+#
+# year = 89
+# print(century(year))
 
 
-number = -34
-print(opposite(number))
+# def to_jaden_case(string):
+#     # jaden_cased_string = ' '.join(word.capitalize() for word in string.split())
+#     # return jaden_cased_string
+#     result = ""
+#     for word in string.split():
+#         result += word.capitalize() + " "
+#     return result
+#
+#
+# string = "How can mirrors be real if our eyes aren't real"
+# print(to_jaden_case(string))
 
 
-def round_to_next5(n):
-    if n % 5 == 0:
-        return n
-    else:
-        return n + (5 - (n % 5))
+# def even_or_odd(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     elif number % 2 != 0:
+#         return "Odd"
+#
+#
+# number = 0
+# print(even_or_odd(number))
+#
+#
+# def get_count(sentence):
+#     total = 0
+#     vowels = "aeiou"
+#     for vowel in sentence:
+#         if vowel in vowels:
+#             total += 1
+#     return total
+#
+#
+#
+# sentence = "aeiou"
+# print(get_count(sentence))
 
 
-n = 7
-print(round_to_next5(n))
+# def opposite(number):
+#     return number * (-1)
+#
+#
+# number = -14
+# print(opposite(number))
+#
+#
+# def number_to_string(num):
+#     return str(num)
+#
+# num = 123
+# print(number_to_string(num))
+#
+#
+# def solution(string):
+#     result = ""
+#     for i in range(len(string)-1, -1, -1):
+#         result += string[i]
+#     return result
+#
+#
+# string = "world"
+# print(solution(string))
 
 
-def powers_of_two(n):
-    return [2 ** i for i in range(n+1)]
+# def reverse_list(l):
+#     # l.reverse()
+#     # return l
+#    return l[::-1]
+#
+#
+# l = [1, 2, 3, 4]
+# print(reverse_list(l))
+#
+#
+# def get_real_floor(n):
+#     if n >= 1 and n < 13:
+#         return n-1
+#     elif n <= 0:
+#         return n
+#     elif n == 13:
+#         return None
+#     elif n >= 14:
+#         return n-2
+#
+#
+# n = 13
+# print(get_real_floor(n))
+#
+#
+# def find_difference(a, b):
+#     cuboid_a = 1
+#     cuboid_b = 1
+#     for i in a:
+#         cuboid_a *= i
+#     for i in b:
+#         cuboid_b *= i
+#     if (cuboid_a - cuboid_b) < 0:
+#         return (cuboid_a - cuboid_b) * -1
+#     else:
+#         return cuboid_a - cuboid_b
+#
+#
+# a = [2, 2, 3]
+# b = [5, 4, 1]
+# print(find_difference(a, b))
 
-n = 5
-print(powers_of_two(n))
+
+# def capitals(word):
+#     resulting_list = []
+#     for i in range(len(word)):
+#         if word[i].isupper():
+#             resulting_list.append(i)
+#     return resulting_list
+#
+# word = "CodEWaRs"
+# print(capitals(word))
+#
+#
+# def litres(time):
+#     return int((time * 0.5) / 1)
+#
+# time = 11.8
+# print(litres(time))
 
 
-def century(year):
-    return (year + 99) // 100
+# def descending_order(num):
+#     stringed_num = str(num)
+#     listed_num = sorted(stringed_num, reverse=True)
+#     result = int("".join(listed_num))
+#     return result
+#
+#
+# num = 42145
+# print(descending_order(num))
 
 
-year = 89
-print(century(year))
+# def positive_sum(arr):
+#     positive_numbers = []
+#     for pos in arr:
+#         if pos > 0:
+#             positive_numbers.append(pos)
+#     return sum(positive_numbers)
+#
+#
+# arr = [1, -4, 7, 12]
+# print(positive_sum(arr))
 
 
+# def arithmetic(a, b, operator):
+#     result = 1
+#     if operator == "add":
+#         return a + b
+#     elif operator == "subtract":
+#         return a - b
+#     elif operator == "multiply":
+#         return a * b
+#     elif operator == "divide":
+#         return a / b
+#     return result
+#
+#
+# a = 5
+# b = 2
+# operator = "divide"
+# print(arithmetic(a, b, operator))
 
 
+# def rental_car_cost(d):
+#     per_day = 40
+#     total_cost = d * per_day
+#     if d >= 7:
+#         total_cost = (d * per_day) - 50
+#     elif d >= 3:
+#         total_cost = (d * per_day) - 20
+#     return total_cost
+#
+# d = 3
+# print(rental_car_cost(d))
 
 
+# def is_palindrome(s):
+#     lower_s = s.lower()
+#     if len(lower_s) == 1:
+#         return True
+#     elif lower_s[0] == lower_s[-1] and lower_s[1] == lower_s[-2] and lower_s[2] == lower_s[-3]:
+#         return True
+#     else:
+#         return False
+#
+#
+# s = "Abba"
+# print(is_palindrome(s))
 
 
+# def count_smileys(arr):
+#     valid_smileys = [":)", ":D", ";)", ";D", ":-)", ":-D", ";-)", ";-D", ":~)", ":~D", ";~)", ";~D"]
+#     count = 0
+#     for face in arr:
+#         if face in valid_smileys:
+#             count += 1
+#     return count
+#
+#
+# arr = [";)", ";(", ";}", ";-D"]
+# print(count_smileys(arr))
 
+
+# def disemvowel(string_):
+#     new_string = ""
+#     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+#     for v in string_:
+#         if v not in vowels:
+#             new_string += v
+#     return new_string
+#
+#
+# string_ = "This website is for losers LOL!"
+# print(disemvowel(string_))
+
+
+# def friend(x):
+#     friends = []
+#     for fr in x:
+#         if len(fr) == 4:
+#             friends.append(fr)
+#     return friends
+#
+#
+# x = ["Ryan", "Kieran", "Mark"]
+# print(friend(x))
+#
+#
+# def rps(p1, p2):
+#     if p1 == p2:
+#         return "Draw!"
+#     elif (p1 == "scissors" and p2 == "paper") or (p1 == "rock" and p2 == "scissors") or ((p1 == "paper" and p2 == "rock")):
+#         return "Player 1 won!"
+#     else:
+#         return "Player 2 won!"
+#
+#
+# p1 = "rock"
+# p2 = "paper"
+# print(rps(p1, p2))
+#
+#
+# def double_integer(i):
+#     return 2 * i
+#
+#
+# i = 47
+# print(double_integer(i))
+
+
+# def people_with_age_drink(age):
+#     resulting_drink = ""
+#     if age < 14:
+#         resulting_drink = "drink toddy"
+#     elif 14 <= age < 18:
+#         resulting_drink = "drink coke"
+#     elif 18 <= age < 21:
+#         resulting_drink = "drink beer"
+#     else:
+#         resulting_drink = "drink whisky"
+#     return resulting_drink
+#
+# age = 14
+# print(people_with_age_drink(age))
+
+
+# def printer_error(s):
+#     total_errors = sum(1 for character in s if character not in 'abcdefghijklm')
+#     return F"{total_errors}/{len(s)}"
+#
+# s = "aaaxbbbbyyhwawiwjjjwwm"
+# print(printer_error(s))
+
+
+# def sort_by_length(arr):
+#     return sorted(arr, key=len)
+#
+#
+# arr = ["Telescopes", "Glasses", "Eyes", "Monocles"]
+# print(sort_by_length(arr))
+
+
+# def is_isogram(string):
+#     lower_string = string.lower()
+#     seen_letters = set()
+#     for char in lower_string:
+#         if char in seen_letters:
+#             return False
+#         else:
+#             seen_letters.add(char)
+#             return True
+#
+#
+# string = "mouse"
+# print(is_isogram(string))
+
+
+# def name_shuffler(str_):
+#     split_string = str_.rsplit(" ")
+#     result = " ".join(split_string[::-1])
+#     return result
+#
+#
+# str_ = "Troy McLure"
+# print(name_shuffler(str_))
+
+
+# def find_average(numbers):
+#     if numbers == []:
+#         return 0
+#     else:
+#         return sum(numbers)/len(numbers)
+#
+#
+# numbers = [1, 2, 3, 4]
+# # numbers = []
+# print(find_average(numbers))
+#
+#
+# def how_much_i_love_you(nb_petals):
+#     if nb_petals == 1:
+#         return "I love you"
+#     elif nb_petals == 2:
+#         return "a little"
+#     elif nb_petals == 3:
+#         return "a lot"
+#     elif nb_petals == 4:
+#         return "passionately"
+#     elif nb_petals == 5:
+#         return "madly"
+#     elif nb_petals == 6:
+#         return "not at all"
+#
+# nb_petals = 2
+# print(how_much_i_love_you(nb_petals))
+#
+#
+# def better_than_average(class_points, your_points):
+#     average = sum(class_points)/len(class_points)
+#     if your_points > average:
+#         return True
+#     else:
+#         return False
+#
+#
+# class_points = [100, 40, 34, 57, 29, 72, 57, 88]
+# your_points = 56
+# print(better_than_average(class_points, your_points))
+
+
+# def reverse(st):
+#     split_st = st.rsplit(" ")
+#     resulting_st = " ".join(split_st[::-1])
+#     return resulting_st
+#
+#
+# st = "Hello World"
+# print(reverse(st))
+#
+#
+# def sum_mix(arr):
+#     return sum(int(num) for num in arr)
+#
+#
+# arr = [9, 3, '7', '3']
+# print(sum_mix(arr))
+#
+#
+# def add_five(num):
+#     total = num + 5
+#     return total
+#
+# num = 5
+# print(add_five(num))
+
+
+# def remove_exclamation_marks(s):
+#     mod_string = ""
+#     for excl in s:
+#         if excl != "!":
+#             mod_string += excl
+#     return mod_string
+# 
+# 
+# s = "Hello!!! World!!!"
+# print(remove_exclamation_marks(s))
+
+
+# def reverse_letter(string):
+#     str_tobe_reversed = ""
+#     for s in string:
+#         if s.isalpha():
+#             str_tobe_reversed += s
+#     return str_tobe_reversed[::-1]
+#
+#
+# string = "ultr53o?n"
+# print(reverse_letter(string))
+
+
+# def human_years_cat_years_dog_years(human_years):
+#     cat_years_after_2 = ((human_years - 2) * 4) + 24
+#     dog_years_after_2 = ((human_years - 2) * 5) + 24
+#     if human_years == 1:
+#         return [human_years, 15, 15]
+#     elif human_years == 2:
+#         return [human_years, 24, 24]
+#     elif human_years >= 3:
+#         return [human_years, cat_years_after_2, dog_years_after_2]
+#
+#
+# human_years = 5
+# print(human_years_cat_years_dog_years(human_years))
+
+
+# def sum_digits(number):
+#     number = abs(number)
+#     result = 0
+#     for n in str(number):
+#         result += int(n)
+#     return result
+#
+#
+# number = -32
+# print(sum_digits(number))
+#
+#
+# def filter_string(string):
+#     just_numbers = ""
+#     for char in string:
+#         if char.isdigit():
+#             just_numbers += char
+#     return int(just_numbers)
+#
+#
+# string = "a1b2c3"
+# print(filter_string(string))
+#
+#
+# def remove_url_anchor(url):
+#     list = url.split("#")
+#     return list[0]
+#
+#
+# url = "www.codewars.com#about"
+# print(remove_url_anchor(url))
+#
+#
+# def smash(words):
+#     result = ""
+#     for word in words:
+#         result += word + " "
+#     return result.rstrip()
+#
+#
+# words = ['hello', 'world', 'this', 'is', 'great']
+# print(smash(words))
+
+
+# def alphabet_position(text):
+#     text_just_letters = ""
+#     for lett in text:
+#         if lett.isalpha():
+#             text_just_letters += lett.lower()
+#
+#     letter_numbers = []
+#     for num in text_just_letters:
+#         letter_numbers.append(str(ord(num) - ord('a') + 1))
+#     return " ".join(letter_numbers)
+#
+#
+# text = "The sunset sets at twelve o'clock."
+# print(alphabet_position(text))
+
+
+# def drop_cap(str_):
+#     cap_list = str_.title()
+#     split_list = cap_list.split()
+#     new_list = []
+#     for word in split_list:
+#         if len(word) <= 2:
+#             new_list.append(word.lower())
+#         else:
+#             new_list.append(word)
+#     return " ".join(new_list)
+#
+#
+# str_ = "apple of banana"
+# print(drop_cap(str_))
+
+
+# def divisors(n):
+#     list_of_divisors = []
+#     for divs in range(1, n + 1):
+#         if n % divs == 0:
+#             list_of_divisors.append(divs)
+#     return len(list_of_divisors)
+#
+#
+# n = 30
+# print(divisors(n))
+
+
+# def two_are_positive(a, b, c):
+#     if a >= 0 and b >= 0 and c < 0:
+#         return True
+#     elif a >= 0 and c >= 0 and b < 0:
+#         return True
+#     elif b >= 0 and c >= 0 and a < 0:
+#         return True
+#
+#     else:
+#         return False
+#
+#
+# print(two_are_positive(4, 6, 0))
+
+
+# def position(alphabet):
+#     letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+#     alphabet_index = (letters.index(alphabet)) + 1
+#     return "Position of alphabet: " + str(alphabet_index)
+#
+#
+# alphabet = "k"
+# print(position(alphabet))
+#
+#
+# def how_many_light_sabers_do_you_own(name):
+#     if name == "Zach":
+#         return 18
+#     if name == "anyone else":
+#         return 0
+#     else:
+#         return 0
+#
+#
+# name = "Zach"
+# print(how_many_light_sabers_do_you_own(name))
+#
+#
+# def replace_exclamation(s):
+#     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+#     for i in s:
+#         if i in vowels:
+#             s = s.replace(i, "!")
+#     return s
+#
+#
+# s = "aeiouAEIOU"
+# print(replace_exclamation(s))
+
+
+# def enough(cap, on, wait):
+#     if cap >= (on + wait):
+#         return 0
+#     elif cap < (on + wait):
+#         return (on + wait) - cap
+#
+#
+# print(enough(100, 60, 50))
+#
+#
+# def area_or_perimeter(l, w):
+#     if l == w:
+#         return l * w
+#     elif l != w:
+#         return (l + w) * 2
+#
+#
+# print(area_or_perimeter(6, 6))
+#
+#
+# def take(arr, n):
+#     return arr[0:n]
+#
+#
+# arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# n = 5
+# print(take(arr, n))
+
+
+# def distinct(seq):
+#     resulting_seq = []
+#     for num in seq:
+#         if num not in resulting_seq:
+#             resulting_seq.append(num)
+#     return resulting_seq
+#
+#
+# seq = [1, 2, 1, 1, 3, 2]
+# print(distinct(seq))
+#
+#
+# def update_light(current):
+#     if current == "green":
+#         return "yellow"
+#     elif current == "yellow":
+#         return "red"
+#     elif current == "red":
+#         return "green"
+#
+#
+# current = "red"
+# print(update_light(current))
+
+
+# def sort_list(sort_by, lst):
+#     sorted_lst = sorted(lst, key=lambda x: x[sort_by], reverse=True)
+#     return sorted_lst
+#
+#
+# lst = [
+#   {"a": 1, "b": 3},
+#   {"a": 3, "b": 2},
+#   {"a": 2, "b": 40},
+#   {"a": 4, "b": 12}
+# ]
+# print(sort_list("a", lst))
+#
+#
+# def shortcut(s):
+#     res_s = ""
+#     lowercase_vowels = {"a", "e", "i", "o", "u"}
+#     for i in s:
+#         if i not in lowercase_vowels:
+#             res_s += i
+#     return res_s
+#
+#
+# s = "HELLO"
+# print(shortcut(s))
+#
+#
+# def series_sum(n):
+#     sum = 0.0
+#     for i in range(n):
+#         sum += 1 / (1 + i * 3)
+#     return "{:.2f}".format(sum)
+#
+#
+# n = 3
+# print(series_sum(n))
+
+
+# def get_grade(s1, s2, s3):
+#     average = (s1 + s2 + s3) / 3
+#     if 100 >= average >= 90:
+#         return "A"
+#     elif 90 > average >= 80:
+#         return "B"
+#     elif 80 > average >= 70:
+#         return "C"
+#     elif 70 > average >= 60:
+#         return "D"
+#     elif 60 > average >= 0:
+#         return "F"
+#
+#
+# print(get_grade(89, 89, 89))
+
+
+def DNA_strand(dna):
+    resulting_strand = ""
+    for i in dna:
+        if i == "A":
+            resulting_strand += "T"
+        elif i == "T":
+            resulting_strand += "A"
+        elif i == "C":
+            resulting_strand += "G"
+        elif i == "G":
+            resulting_strand += "C"
+    return resulting_strand
+
+
+dna = "ATTGC"
+print(DNA_strand(dna))
 
 
