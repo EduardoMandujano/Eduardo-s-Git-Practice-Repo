@@ -1817,21 +1817,172 @@
 # print(get_grade(89, 89, 89))
 
 
-def DNA_strand(dna):
-    resulting_strand = ""
-    for i in dna:
-        if i == "A":
-            resulting_strand += "T"
-        elif i == "T":
-            resulting_strand += "A"
-        elif i == "C":
-            resulting_strand += "G"
-        elif i == "G":
-            resulting_strand += "C"
-    return resulting_strand
+# def DNA_strand(dna):
+#     resulting_strand = ""
+#     for i in dna:
+#         if i == "A":
+#             resulting_strand += "T"
+#         elif i == "T":
+#             resulting_strand += "A"
+#         elif i == "C":
+#             resulting_strand += "G"
+#         elif i == "G":
+#             resulting_strand += "C"
+#     return resulting_strand
+#
+#
+# dna = "ATTGC"
+# print(DNA_strand(dna))
 
 
-dna = "ATTGC"
-print(DNA_strand(dna))
+# def past(h, m, s):
+#     result = ((h * 3600000) + (m * 60000) + (s * 1000))
+#     return result
+#
+#
+# h = 1
+# m = 1
+# s = 1
+# print(past(h, m, s))
+
+
+# def queue_time(customers, n):
+#     if n == 1:
+#         return sum(customers)
+#
+#     tills_times = [0] * n
+#
+#     for time in customers:
+#         tills_times[0] += time
+#         tills_times.sort()
+#
+#     return max(tills_times)
+#
+#
+# customers = [5, 3, 4]
+# n = 2
+# print(queue_time(customers, n))
+
+
+# def count_sheep(n):
+#     sheep_string = ""
+#     if n == 0:
+#         return ""
+#     else:
+#         for i in range(1, n + 1):
+#             sheep_string += F"{i} sheep..."
+#     return sheep_string
+#
+#
+# n = 9
+# print(count_sheep(n))
+
+
+# def sum_array(arr):
+#     if arr is None or len(arr) <= 2 or len(arr) == 0:
+#         return 0
+#     else:
+#         result_arr = sorted(arr)
+#         result_arr.pop()
+#         result_arr.pop(0)
+#     return sum(result_arr)
+#
+# arr = [1]
+# # arr = [6, 2, 1, 8, 10]
+# print(sum_array(arr))
+#
+#
+# def apple(x):
+#     if int(x) * int(x) > 1000:
+#         return "It's hotter than the sun!!"
+#     else:
+#         return "Help yourself to a honeycomb Yorkie for the glovebox."
+#
+#
+# x = 10
+# print(apple(x))
+#
+#
+# def expanded_form(num):
+#     num_str = str(num)
+#     result = []
+#     for i, digit in enumerate(num_str):
+#         if digit != "0":
+#             result.append(digit + "0" * (len(num_str) - i - 1))
+#     return " + ".join(result)
+#
+#
+# num = 12
+# print(expanded_form(num))
+#
+
+# def tail_swap(strings):
+#     a_head, a_tail = strings[0].split(":")
+#     # swapped_a = a_head + ":" + strings[1].split(":")[1]
+#     b_head, b_tail = strings[1].split(":")
+#     # swapped_b = b_head + ":" + strings[0].split(":")[1]
+#     swapped_b = b_head + ":" + a_tail
+#     swapped_a = a_head + ":" + b_tail
+#     return [swapped_a, swapped_b]
+#
+#
+# strings = ["abc:123", "cde:456"]
+# print(tail_swap(strings))
+
+# import math
+# def square_it(digits):
+#     digits_str = str(digits)
+#     digits_count = len(digits_str)
+#     sqrd_digit_count = int(math.sqrt(digits_count))
+#     if sqrd_digit_count * sqrd_digit_count != digits_count:
+#         return 'Not a perfect square!'
+#     rows = [digits_str[i:i + sqrd_digit_count] for i in range(0, digits_count, sqrd_digit_count)]
+#     square = "\n".join(rows)
+#
+#     return square
+#
+#
+# digits = 1212
+# print(square_it(digits))
+
+
+def find_multiples(integer, limit):
+    result = []     # Variable where the resulting list/array will be stored
+    i = 1           # Initializes the number iterations
+    while (i * integer) <= limit: # While i and the iterations * integer are lesser or equals to five, loop keeps going
+        result.append(i * integer) # Stores the iteration results into the array
+        i += 1                      # Stops the iteration for never stopping
+    return result           # Returns the result
+
+integer = 12
+limit = 144
+print(find_multiples(integer, limit))
+
+
+def calculate_age(year_of_birth, current_year):
+    if year_of_birth < current_year:
+        solution = current_year - year_of_birth
+        if solution == 1:
+            return F"You are {solution} year old."
+        else:
+            return F"You are {solution} years old."
+    elif year_of_birth > current_year:
+        solution = year_of_birth - current_year
+        if solution == 1:
+            return F"You will be born in {solution} year."
+        else:
+            return F"You will be born in {solution} years."
+    elif year_of_birth == current_year:
+        return "You were born this very year!"
+
+
+year_of_birth = 1983
+current_year = 1982
+print(calculate_age(year_of_birth, current_year))
+
+
+
+
+
 
 
